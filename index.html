@@ -150,9 +150,10 @@ body::before{
   font-size:clamp(44px,8vw,88px);
   font-weight:400;
   letter-spacing:-0.035em;
-  line-height:1.0;
+  line-height:1.15;
   margin-bottom:24px;
   color:rgba(255,255,255,0.92);
+  overflow:visible;
 }
 .hero h1 em{
   font-style:italic;
@@ -160,6 +161,8 @@ body::before{
   -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
   animation:heroGlow 6s ease-in-out infinite alternate;
   background-size:200% 200%;
+  padding-bottom:4px;
+  -webkit-box-decoration-break:clone;box-decoration-break:clone;
 }
 @keyframes heroGlow{
   0%{background-position:0% 50%;filter:brightness(1)}
